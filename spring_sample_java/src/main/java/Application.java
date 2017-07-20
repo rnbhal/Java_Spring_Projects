@@ -10,7 +10,13 @@ public class Application {
 		// TODO Auto-generated method stub
 		ApplicationContext appcontext = new AnnotationConfigApplicationContext(AppConfig.class);
 		CustomerService service = appcontext.getBean("customerService", CustomerService.class);
-		
+
+		System.out.println(service);
+
+		// same address for singleton
+		CustomerService service2 = appcontext.getBean("customerService", CustomerService.class);
+		System.out.println(service2);
+
 		System.out.println(service.findAll().get(0).getFirstname());
 	}
 

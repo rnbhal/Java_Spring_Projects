@@ -5,7 +5,7 @@
 
 	<bean name="foor" class="com.vmware.repository.HibernateCustomerRepositoryImpl" />
 
-	<bean name="foos" class="com.vmware.service.CustomerserviceImpl">
+	<bean name="foos" class="com.vmware.service.CustomerserviceImpl" scope="singleton">
 		<constructor-arg ref="foor"></constructor-arg>
 		<!-- <property name="customerRepository" ref="customerRepository"/> -->
 	</bean>
