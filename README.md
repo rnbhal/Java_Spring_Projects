@@ -1,2 +1,2 @@
 # Java_Spring_Projects
-Java Spring Project for learning spring 
+Spring Framework Project for learning (JAVA) 
